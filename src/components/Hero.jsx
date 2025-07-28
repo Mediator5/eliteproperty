@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
+import heroBg from '../assets/NWxJepQVbga9.jpg';
+
 
 const Hero = () => {
   const scrollToProperties = () => {
@@ -19,13 +21,13 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/src/assets/NWxJepQVbga9.jpg')`
         }}
       />
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-pulse"></div>
@@ -62,7 +64,7 @@ const Hero = () => {
               Explore Properties
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
-            
+
             <button
               onClick={scrollToAbout}
               className="group px-8 py-4 bg-white/10 backdrop-blur-md text-white rounded-lg hover:bg-white/20 transition-all duration-300 font-semibold text-lg flex items-center gap-2"
